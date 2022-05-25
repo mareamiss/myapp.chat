@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="#454645"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Select_Chat">
+
+    <TextView
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:text="Hallo From Socket.IO App"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/IpInfo"
+        android:paddingLeft="15dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:text="Your Ip is :"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="top|center"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ConectedWith"
+        android:paddingLeft="15dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:text="Conected With :"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="top|center"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Ping"
+        android:paddingLeft="15dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:text="Hosting "
+        android:layout_marginTop="177dp"
+        android:layout_gravity="top|center"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:onClick="CusomServer"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#AD96AEF5"
+            android:layout_margin="5dp"
+            android:text="Wifi Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:onClick="RandomServer"
+            android:padding="10dp"
+            android:background="#AD08FF00"
+            android:layout_margin="5dp"
+            android:text="Online Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:onClick="Finish"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center|center_horizontal"
+        android:layout_gravity="bottom|center"
+        android:padding="10dp"
+        android:background="#ADFF0000"
+        android:layout_margin="5dp"
+        android:text="Exit App"
+        android:layout_width="120dp"
+        android:layout_height="40dp"/>
+
+    <ProgressBar
+        android:layout_marginBottom="85dp"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center" />
+</FrameLayout>
